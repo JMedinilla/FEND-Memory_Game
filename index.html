@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>JMedinilla</title>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <h1>Matching Game - Saselandia edition</h1>
+  <div id="stats">
+    <h3 id="stats-timer">00h:00m:00s</h3>
+    <h3 id="stats-moves">0 moves</h3>
+    <div id="stats-stars">
+      <img id="star-third" class="star" src="img/star.png" />
+      <img id="star-second" class="star" src="img/star.png" />
+      <img id="star-first" class="star" src="img/star.png" />
+    </div>
+  </div>
+  <div id="table">
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+    <div class="card closed"><img class="card-img" src=""></div>
+  </div>
+  <img id="restart-button" src="img/restart.png" />
+
+  <div id="modal">
+    <div id="modal-content">
+      <div id="modal-header">
+        <h1 class="modal-text-big">Enhorabuena</h1>
+      </div>
+      <div id="modal-body">
+        <p id="modal-time" class="modal-text">Juego finalizado en: 00h:00m:00s</p>
+        <p id="modal-moves" class="modal-text">Movimientos realizados: 0</p>
+        <p class="modal-text">Estrellas conseguidas:</p>
+        <div id="modal-stars">
+          <img id="modal-star-third" class="star" src="img/star.png" />
+          <img id="modal-star-second" class="star" src="img/star.png" />
+          <img id="modal-star-first" class="star" src="img/star.png" />
+        </div>
+      </div>
+      <div id="modal-footer">
+        <h2 id="modal-btn-play">Volver a jugar</h2>
+        <h2 id="modal-btn-close">Cerrar</h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

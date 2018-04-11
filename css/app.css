@@ -1,0 +1,147 @@
+body {
+  font-family: "VT323", monospace;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 1.8em;
+  color: white;
+}
+
+.card-img {
+  display: none;
+}
+
+.card {
+  width: 126px;
+  height: 126px;
+  margin: 12px;
+  cursor: pointer;
+  background: url("../img/saselback.jpg");
+  background-size: contain;
+  box-shadow: 4px 4px 4px 0 rgba(46, 61, 73, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  width: 30px;
+  height: 30px;
+}
+
+.modal-text {
+  font-size: 1.6em;
+}
+
+#stats {
+  width: 600px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #5a82b4;
+  box-shadow: 10px 10px 10px 0 rgba(46, 61, 73, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+}
+
+#stats-timer {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+}
+
+#stats-moves {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+}
+
+#stats-stars {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+}
+
+#table {
+  width: 600px;
+  padding: 12px;
+  background: #5a82b4;
+  box-shadow: 10px 10px 10px 0 rgba(46, 61, 73, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#restart-button {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal-content {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  width: 30%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+#modal-header {
+  background: #5a82b4;
+  color: #fff;
+  padding: 12px;
+}
+
+#modal-body {
+  padding: 12px;
+}
+
+#modal-footer {
+  background: #5a82b4;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#modal-btn-play {
+  width: 50%;
+  border-right: 1px solid white;
+  cursor: pointer;
+}
+
+#modal-btn-close {
+  width: 50%;
+  border-left: 1px solid white;
+  cursor: pointer;
+}
+
+#modal h1 {
+  height: 30px;
+}
+
+#modal h2 {
+  height: 30px;
+}
