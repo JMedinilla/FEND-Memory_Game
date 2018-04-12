@@ -195,8 +195,8 @@ function performCustomClick(card) {
 // Victory method
 function finishTheGame() {
   openModal();
-  MODAL_TIME.innerHTML = "Juego finalizado en: " + auxTime;
-  MODAL_MOVES.innerHTML = "Movimientos realizados: " + moves;
+  MODAL_TIME.innerHTML = "Game finished in: " + auxTime;
+  MODAL_MOVES.innerHTML = "Moves made: " + moves;
   if (stars < 3) {
     MODAL_STAR_FIRST.style.display = 'none';
   }
