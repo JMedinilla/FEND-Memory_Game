@@ -127,17 +127,13 @@ function shuffleCards(cardList, imagesList) {
 // Change moves number
 function changeMoves(num) {
   MOVES.innerHTML = num + " moves"
-  if (num > 10) {
+  if (num > 14) {
     stars = 2;
     STAR_FIRST.style.display = 'none';
   }
-  if (num > 20) {
+  if (num > 24) {
     stars = 1;
     STAR_SECOND.style.display = 'none';
-  }
-  if (num > 30) {
-    stars = 0;
-    STAR_THIRD.style.display = 'none';
   }
 }
 
@@ -203,9 +199,6 @@ function finishTheGame() {
   if (stars < 2) {
     MODAL_STAR_SECOND.style.display = 'none';
   }
-  if (stars < 1) {
-    MODAL_STAR_THIRD.style.display = 'none';
-  }
 }
 
 // Resets the game to its original state
@@ -234,7 +227,6 @@ function reset() {
   TIMER.innerHTML = "00h:00m:00s";
   STAR_FIRST.style.display = '';
   STAR_SECOND.style.display = '';
-  STAR_THIRD.style.display = '';
 }
 
 const CARDS = document.querySelectorAll('div.card');
@@ -255,10 +247,8 @@ const MODAL_PLAY = document.querySelector('#modal-btn-play');
 const MODAL_CLOSE = document.querySelector('#modal-btn-close');
 const MODAL_STAR_FIRST = document.querySelector('#modal-star-first');
 const MODAL_STAR_SECOND = document.querySelector('#modal-star-second');
-const MODAL_STAR_THIRD = document.querySelector('#modal-star-third');
 const STAR_FIRST = document.querySelector('#star-first');
 const STAR_SECOND = document.querySelector('#star-second');
-const STAR_THIRD = document.querySelector('#star-third');
 const TIMER = document.querySelector('#stats-timer');
 const MOVES = document.querySelector('#stats-moves');
 const RESTART = document.querySelector('#restart-button');
